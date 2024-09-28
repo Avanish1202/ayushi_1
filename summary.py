@@ -15,7 +15,7 @@ def generate_chunks(inp_str):
     sentences = inp_str.split('<eos>')
     current_chunk = 0 
     chunks = []
-    for sentence in sentencess:
+    for sentence in sentences:
         if len(chunks) == current_chunk + 1: 
             if len(chunks[current_chunk]) + len(sentence.split(' ')) <= max_chunk:
                 chunks[current_chunk].extend(sentence.split(' '))
