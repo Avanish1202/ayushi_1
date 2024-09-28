@@ -26,7 +26,7 @@ def generate_chunks(inp_str):
             chunks.append(sentence.split(' '))
 
     for chunk_id in range(len(chunks)):
-        chunks[chunk_id] = ' '.join(chunks[chunk_id])
+        chunks[chunk_id] = ' '.(chunks[chunk_id])
     return chunks
 
 summarizer = load_summarizer()
